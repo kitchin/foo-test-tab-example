@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Foo Test Tab Example
-Version: 1.1
+Version: 1.2
 Description: Add a meta-screen tab to the Dashboard Posts page. The new tab is next to "Screen Options" and "Help." Mod to use for other admin pages. Works with the new js structure in WP 4.3. Warning: future versions of WP may easily break this plugin.
 Author: kitchin
 */
@@ -35,6 +35,7 @@ class FooTestTab {
 	/*
 	*/
 	public function action__in_admin_footer() {
+		// Note, 'aria-controls' is signficant. WP's js uses it to pick the panel to show.
 ?>
 		<div id="foo-test-tab-wrap" class="hidden" tabindex="-1" aria-label="Foo Test Tab">
 			<h5>Hello world.</h5>
