@@ -28,7 +28,7 @@ jQuery(document).ready(function($){
 				if ( e.target.scrollIntoView )
 					e.target.scrollIntoView(false);
 			});
-		} else console.log('err, missing', 'screenMeta.toggles');
-	} else console.log('ok, missing', 'foo-test-tab');
+		} // else console.log('err, missing', 'screenMeta.toggles');
+	} // else console.log('ok, missing', 'foo-test-tab');
 });
 } catch(e) {}
