@@ -1,0 +1,23 @@
+/* Copy from wp-admin/css/common.css:
+* #screen-options-link-wrap,
+* #contextual-help-link-wrap
+*/
+#foo-test-tab-wrap {
+	margin: 0;
+	padding: 8px 20px 12px;
+	position: relative;
+}
+#foo-test-tab-wrap h5 {
+	margin: 8px 0;
+	font-size: 13px;
+}
+#foo-test-tab-link-wrap {
+	float: right;
+	height: 28px;
+	margin: 0 0 0 6px;
+	border: 1px solid #ddd;
+	border-top: none;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 1px -1px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 1px -1px rgba(0,0,0,0.1);
+}
