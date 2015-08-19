@@ -5,9 +5,9 @@ Version: 1.0
 Description: Add a meta-screen tab to the Dashboard Posts page. The new tab is next to "Screen Options" and "Help." Mod to use for other admin pages. Works with the new js structure in WP 4.3. Warning: future versions of WP may easily break this plugin.
 Author: kitchin
 */
-	
+
 class FooTestTab {
-	
+
 	public function __construct() {
 		global $pagenow;
 		// Load on Dashboard / Posts.
@@ -22,7 +22,7 @@ class FooTestTab {
 		}
 	}
 
-	
+
 	/*
 	*/
 	public function action__admin_enqueue_scripts() {
@@ -31,7 +31,7 @@ class FooTestTab {
 		wp_enqueue_script( 'foo-test-tab', plugins_url( '/foo-test-tab.js', __FILE__ ), array( 'jquery' ), $ver, !true );
 	}
 
-	
+
 	/*
 	*/
 	public function action__in_admin_footer() {
@@ -41,7 +41,7 @@ class FooTestTab {
 		</div>
 		<div id="foo-test-tab-link-wrap" class="hidden screen-meta-toggle">
 			<button type="button" id="foo-test-tab-link" class="button show-settings" aria-controls="foo-test-tab-wrap" aria-expanded="false">
-			Foo Test Tab</button>				
+			Foo Test Tab</button>
 		</div>
 <?php
 	}
